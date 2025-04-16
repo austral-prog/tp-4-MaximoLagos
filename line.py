@@ -1,12 +1,6 @@
 import math
 
-def line():
-    # Ingreso de datos
-    A = float(input("Ingrese el coeficiente A: "))
-    B = float(input("Ingrese el coeficiente B: "))
-    X1 = float(input("Ingrese el coeficiente X1: "))
-    X2 = float(input("Ingrese el coeficiente X2: "))
-
+def line(A, B, X1, X2):
     # Mostrar los coeficientes ingresados
     print("\nEl coeficiente A de su ecuación de la recta es:", A)
     print("El coeficiente B de su ecuación de la recta es:", B)
@@ -31,6 +25,4 @@ def line():
 
     # Mostrar la distancia
     print("\nLa distancia entre ellos es:", distancia)
-
-# Llamar a la función
-line()
+    return distancia
